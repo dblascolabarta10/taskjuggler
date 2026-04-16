@@ -240,7 +240,7 @@ textreport frame "" {
 taskreport plan_inicial "" {
   scenarios plan
   headline "Planificación Inicial del Proyecto "
-  columns bsi, name, start, end, effort, chart
+  columns bsi, name, start, end, effort, chart { width 1000 }
 }
 
 taskreport overview "" {
@@ -248,7 +248,7 @@ taskreport overview "" {
   headline "Current Project Plan"
   columns bsi { title 'WBS' },
           name, start, end, effort, cost,
-          revenue, chart { ${TaskTip} }
+          revenue, chart { ${TaskTip} width 1000 }
   timeformat "%a %Y-%m-%d"
   loadunit days
   hideresource @all
