@@ -324,7 +324,7 @@ resourcereport contactList "" {
 
 resourcereport resourceGraph "" {
   scenarios actual
-  headline "Current Resource Allocation Graph"
+  headline "Current  Resource Allocation Graph"
   columns no, name, effort, rate, weekly { ${TaskTip} }
   loadunit shortauto
   hidetask ~(isleaf() & isleaf_())
