@@ -88,11 +88,11 @@ task WMGame "Web & Mobile Game" {
     chargeset back
     depends WMGame.tback.tbackDev
     task tEval "Evaluacion Proveedor Cloud" {
-      effort 50d
+      effort 55d
       allocate me, dev1
     }
     task tDeploy "Setup Infraestructura Cloud" {
-      effort 60d
+      effort 65d
       allocate me, dev1
       depends WMGame.tcloud.tEval
     }
