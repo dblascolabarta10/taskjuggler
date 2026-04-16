@@ -92,7 +92,7 @@ task WMGame "Web & Mobile Game" {
       allocate me, dev1
     }
     task tDeploy "Setup Infraestructura Cloud" {
-      effort 65d
+      effort 66d
       allocate me, dev1
       depends WMGame.tcloud.tEval
     }
