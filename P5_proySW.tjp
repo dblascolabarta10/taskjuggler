@@ -136,7 +136,6 @@ task WMGame "Web & Mobile Game" {
       depends WMGame.twebF.tGUId
     }
     task tFEt "Web Front End Test" {
-      start 2026-05-15
       effort 6d
       allocate dev1
       depends WMGame.twebF.tFEc
