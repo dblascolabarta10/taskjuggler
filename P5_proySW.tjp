@@ -88,11 +88,11 @@ task WMGame "Web & Mobile Game" {
     chargeset back
     depends WMGame.tback.tbackDev
     task tEval "Evaluacion Proveedor Cloud" {
-      effort 3d
+      effort 12d
       allocate me, dev1
     }
     task tDeploy "Setup Infraestructura Cloud" {
-      effort 5d
+      effort 15d
       allocate me, dev1
       depends WMGame.tcloud.tEval
     }
@@ -240,7 +240,7 @@ textreport frame "" {
 taskreport plan_inicial "" {
   scenarios plan
   headline "Planificación Inicial del Proyecto "
-  columns bsi, name, start, end, effort, chart { width 1000 }
+  columns bsi, name, start, end, effort, chart 
 }
 
 taskreport overview "" {
@@ -248,7 +248,7 @@ taskreport overview "" {
   headline "Current Project Plan"
   columns bsi { title 'WBS' },
           name, start, end, effort, cost,
-          revenue, chart { ${TaskTip} width 1000 }
+          revenue, chart { ${TaskTip} }
   timeformat "%a %Y-%m-%d"
   loadunit days
   hideresource @all
