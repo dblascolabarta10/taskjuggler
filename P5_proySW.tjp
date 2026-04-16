@@ -136,6 +136,7 @@ task WMGame "Web & Mobile Game" {
       depends WMGame.twebF.tGUId
     }
     task tFEt "Web Front End Test" {
+      start 2026-05-15
       effort 6d
       allocate dev1
       depends WMGame.twebF.tFEc
@@ -144,7 +145,7 @@ task WMGame "Web & Mobile Game" {
 
   # CAMBIO 6: Pruebas de aceptación con dependencias y fecha mínima (15 mayo)
   task ttest "Acceptance tests" {
-      start 2026-05-15
+      minstart 2026-05-15
       effort 10d
       allocate boss, dev2
       actual:effort 20d
